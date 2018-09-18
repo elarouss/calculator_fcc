@@ -1,0 +1,80 @@
+body {
+  background-color: #FAFAFA; }
+
+#app {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  #app #calculator {
+    width: 35%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    background-color: #263238;
+    padding: 10px;
+    box-shadow: 0px 0px 1px 1px black; }
+    @media (min-width: 320px) {
+      #app #calculator {
+        width: 90%; } }
+    @media (min-width: 768px) {
+      #app #calculator {
+        width: 40%; } }
+    @media (min-width: 1024px) {
+      #app #calculator {
+        width: 30%; } }
+    #app #calculator #formula {
+      flex: 1;
+      color: #00B0FF;
+      font-size: 1.4rem;
+      text-align: right;
+      font-family: 'Nova Mono'; }
+    #app #calculator #display {
+      flex: 1;
+      color: #FFFFFF;
+      font-size: 1.7rem;
+      text-align: right;
+      font-family: 'Nova Mono'; }
+    #app #calculator #buttons {
+      border-right: 1px solid black;
+      border-bottom: 1px solid black;
+      display: grid;
+      grid-template: auto auto auto auto auto / auto auto auto auto;
+      flex: 1; }
+      #app #calculator #buttons button {
+        border-right: none;
+        border-bottom: none;
+        border-top: 1px solid black;
+        border-left: 1px solid black;
+        color: #FFFFFF;
+        font-size: 1.4rem;
+        font-family: 'Nova Mono'; }
+        #app #calculator #buttons button:focus {
+          outline: none; }
+        #app #calculator #buttons button:hover {
+          border: 0.5px solid #00B0FF;
+          color: #00B0FF; }
+      #app #calculator #buttons #divide, #app #calculator #buttons #multiply, #app #calculator #buttons #add, #app #calculator #buttons #subtract {
+        background-color: #455A64; }
+      #app #calculator #buttons #clear, #app #calculator #buttons #equals {
+        grid-row-end: span 2; }
+      #app #calculator #buttons #equals {
+        background-color: #1565C0; }
+      #app #calculator #buttons #clear {
+        background-color: #D32F2F; }
+      #app #calculator #buttons #one, #app #calculator #buttons #two, #app #calculator #buttons #three, #app #calculator #buttons #four, #app #calculator #buttons #five,
+      #app #calculator #buttons #six, #app #calculator #buttons #seven, #app #calculator #buttons #eight, #app #calculator #buttons #nine, #app #calculator #buttons #zero, #app #calculator #buttons #decimal {
+        background-color: #37474F; }
+      #app #calculator #buttons #zero {
+        grid-column-end: span 2; }
+  #app footer {
+    margin-top: 1.3rem;
+    font-family: 'Nova Mono'; }
+    #app footer a {
+      text-decoration: none;
+      font-size: 1.3rem;
+      color: #37474F; }
+    #app footer div {
+      margin: 10px; }
