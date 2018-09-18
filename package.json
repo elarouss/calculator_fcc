@@ -1,6 +1,7 @@
 {
   "name": "calculator_fcc",
   "version": "0.1.0",
+  "homepage" : "http://elarouss.github.io/calculator_fcc",
   "private": true,
   "dependencies": {
     "gh-pages": "^2.0.0",
